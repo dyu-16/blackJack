@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack!</title>
+    <link rel="stylesheet" href="/blackJack_style.css">
+</head>  
+
+<body class='centered'>
+
+  <h1 id='title'>Blackjack!</h1>
+
+  <div id='gameDetails'>
+    <h2 id='howToPlay'><u>How to Play</u></h2>
+
+    <p>Press <strong>Deal</strong> to start a new game.</p>
+    <p> Player is dealt an up card, followed by a down card to the dealer. Player is then dealt a second up card, followed by an up card for the dealer.</p>
+    <p>If a player is dealt two cards of the same rank, they can <strong>Split</strong> the cards and choose to play each of them separately, putting up a bet for each one.</p>
+    <p><strong>Aces</strong> can have a value of <strong>1</strong> or <strong>11</strong>, automatically set depending on current Total Hand Value.</p>
+    <p>Dealer and Player <strong>Bust</strong> when they have Total Hand(s) Values of over 21.</p>
+    <p>Press <strong>Hit</strong> to be dealt another a card.</p>
+    <p>Press <strong>Stand</strong> to stop asking for cards.</p>
+    <p></p>
+  </div>
+
+  <div class='dealerTag'>
+    <h1>Dealer</h1>
+  </div>
+
+  <div id='blackJackGame'>
+
+    <div class='blackJackGrid'>
+      <div></div>
+      <div id='dealer'>
+        <div id='dealerHand'>
+          <div class='card'>
+            <h1 class='cardId'>A</h1>
+            <img class='spades' src="https://media.gettyimages.com/photos/spades-card-symbol-picture-id1225058052?k=20&m=1225058052&s=612x612&w=0&h=2WTk-rJoSPJ4hhbbTs6X3uwoUQzkkeISya16rEtffpQ=">
+          </div>
+          <div class='card'>
+            <h1 class='cardId'>J</h1>
+            <img class='hearts' src="https://media.gettyimages.com/vectors/cards-hearts-icon-flat-vector-id1158093606?k=20&m=1158093606&s=612x612&w=0&h=lzmyDvyW9wCm98eMNa3LtSKylw49YRxdO44SwA5P8tE=">
+          </div>
+        </div>
+      </div>
+
+      <div class='deck'>
+        <div class='deckOfCards'>
+          <div class='cardBack'></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h1 id='endGameText'></h1>
+    </div>
+
+    <div class='blackJackGrid'>
+      <div></div>
+      <div id='player'>
+        <div id='playerHand'>
+          <div id='firstHand'>
+            <div class='card'>
+              <h1 class='cardId'>A</h1>
+              <img class='clovers' src="https://media.gettyimages.com/photos/clubs-card-symbol-picture-id1225058044?k=20&m=1225058044&s=612x612&w=0&h=zdQUv47EQyPrxQaGY9FpdoBuo_U9yBQ7N6gNkRl9eEE=">
+            </div>
+            <div class='card'>
+              <h1 class='cardId'>K</h1>
+              <img class='diamonds' src="https://media.gettyimages.com/photos/diamonds-card-symbol-picture-id1225058062?k=20&m=1225058062&s=612x612&w=0&h=UZYF5bwDoX8CEofXZFsPnfua1NmPkXjHNmBMLqPo5W8=">
+            </div>
+          </div>
+          <div id='splitHand'>
+            <div class='card'>
+              <h1 class='cardId'>A</h1>
+              <img class='spades' src="https://media.gettyimages.com/photos/spades-card-symbol-picture-id1225058052?k=20&m=1225058052&s=612x612&w=0&h=2WTk-rJoSPJ4hhbbTs6X3uwoUQzkkeISya16rEtffpQ=">
+            </div>
+            <div class='card'>
+              <h1 class='cardId'>Q</h1>
+              <img class='spades' src="https://media.gettyimages.com/photos/spades-card-symbol-picture-id1225058052?k=20&m=1225058052&s=612x612&w=0&h=2WTk-rJoSPJ4hhbbTs6X3uwoUQzkkeISya16rEtffpQ=">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class='playerTag'>
+    <h1>Player</h1>
+  </div>
+
+  <div id="dealerPlayerText">
+    <p id="dealerText"></p>
+    <p id="playerText"></p>
+    <p id="splitHandText"></p>
+  </div>
+
+  <div class='blackJackButtons'>
+    <button type='button' id='deal' class='gameButtons'>Deal</button>
+    <button type='button' id='hit' class='gameButtons disable'>Hit</button>
+    <button type='button' id='stand' class='gameButtons disable'>Stand</button>
+    <button type='button' id='split' class='gameButtons disable'>Split</button>
+    <button type='button' id='splitHandHit' class='gameButtons disable'>Hit (Split Hand)</button>
+  </div>
+
+  <img id='qblackJack' src='https://cdn-icons-png.flaticon.com/512/1983/1983632.png'>
+
+  <script src="/blackJack_script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+.centered {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #title {
+    font-family: "Times New Roman";
+    font-size: 250%;
+    color: rgb(20, 95, 136);
+  }
+  
+  #popup {
+    z-index: 500;
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    right: 28%;
+  }
+  
+  #howToPlay {
+    color: rgb(90, 0, 0);
+  }
+  
+  .gameButtons {
+    color: white;
+    font-size: 120%;
+    font-family: "Times New Roman";
+    background-color: rgb(0, 46, 120);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px 10px;
+  }
+  
+  .disable[disabled] {
+    background: rgba(0, 0, 0, 0.35);
+  }
+  
+  #qblackJack {
+    width: 25%;
+  }
+  
+  #blackJackGame {
+    grid-template-rows: 100% 100% 100%;
+  }
+  
+  .blackJackGrid {
+    margin-left: 0px;
+    margin-right: 0px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 25% 50% 25%;
+  }
+  
+  .card {
+    border: 7px solid black;
+    border-radius: 15px;
+    width: 100px;
+    height: 150px;
+    margin: 25px;
+    margin-left: -75px;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cardBack {
+    border: 5.25px solid black;
+    border-radius: 10.75px;
+    width: 75%;
+    height: 85%;
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 55, 85);
+  }
+  
+  .deckOfCards {
+    border: 7px solid black;
+    border-radius: 15px;
+    width: 100px;
+    height: 150px;
+    margin: 25px;
+    margin-left: -75px;
+    background-color: white;
+    box-shadow: 5px 5px 1px 1px black;
+  }
+  
+  .deck {
+    display: flex;
+    justify-content: start;
+    align-self: center;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+  .cardId {
+    font-family: "Arial";
+    font-size: 30px;
+    text-align: left;
+    line-height: 5px;
+    padding: 0px 0px 0px 5px;
+  }
+  
+  .spades,
+  .hearts,
+  .clovers,
+  .diamonds {
+    display: absolute;
+    position: relative;
+    z-index: 0;
+  }
+  .spades {
+    width: 100%;
+    bottom: 6px;
+  }
+  
+  .hearts {
+    width: 50%;
+    bottom: -11px;
+  }
+  
+  .clovers {
+    width: 90%;
+    bottom: 1px;
+  }
+  
+  .diamonds {
+    width: 100%;
+    bottom: 5px;
+  }
+  
+  #dealerHand,
+  #playerHand,
+  #firstHand,
+  #splitHand {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #dealerHand,
+  #playerHand {
+    margin-left: 100px;
+  }
+  
+  #firstHand {
+    margin-left: 0px;
+  }
+  
+  #splitHand {
+    margin-left: 125px;
+  }
+  
+  .dealerTag {
+    color: rgb(54, 0, 0);
+    margin-bottom: -15px;
+  }
+  
+  .playerTag {
+    color: rgb(0, 55, 85);
+    margin-top: 5px;
+  }
+  
+  #dealerText {
+    color: rgb(54, 0, 0);
+  }
+  
+  #playerText,
+  #splitHandText {
+    color: rgb(0, 55, 85);
+  }
+  
+  #endGameText {
+    color: rgb(0, 100, 144);
+  }
+  
+  .bubble {
+    height: 250px;
+    line-height: 250px;
+    width: 40%;
+    min-width: 200px;
+    background: ivory;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 50px;
+    font-size: 6rem;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .pointer {
+    height: 40px;
+    width: 40px;
+    background: ivory;
+    margin: 0 auto;
+    transform: rotate(45deg);
+    border-radius: 0 0 12px 0;
+    margin-top: -22px;
+    position: relative;
+    right: calc(0.5vw - 200px);
+  }
+  
+  .blurred {
+    background: gray;
+    filter: blur(20px);
+    position: relative;
+    top: -315px;
+    /* 	transform: scale(1.05); */
+    z-index: -1;
+  }
+  
+  .card:nth-child(2) {
+    transform: translateY(10px) rotate(0deg);
+  }
+  .card:nth-child(3) {
+    transform: translateY(20px) rotate(0deg);
+  }
+  .card:nth-child(4) {
+    transform: translateY(30px) rotate(0deg);
+  }
+  .card:nth-child(5) {
+    transform: translateY(40px) rotate(0deg);
+  }
+  .card:nth-child(6) {
+    transform: translateY(50px) rotate(0deg);
+  }
+  
+  .card:nth-child(1):hover {
+    z-index: 1;
+    transform: translateY(-20px) rotate(0deg) scale(1.1);
+  }
+  
+  .card:nth-child(2):hover {
+    z-index: 1;
+    transform: translateY(-16px) rotate(0deg) scale(1.1);
+  }
+  
+  .card:nth-child(3):hover {
+    z-index: 1;
+    transform: translateY(-12px) rotate(0deg) scale(1.1);
+  }
+  
+  .card:nth-child(4):hover {
+    z-index: 2;
+    transform: translateY(-20px) rotate(0deg) scale(1.1);
+  }
+  
+  .card:nth-child(5):hover {
+    z-index: 2;
+    transform: translateY(-20px) rotate(0deg) scale(1.1);
+  }
+  
+  .card:nth-child(6):hover {
+    z-index: 2;
+    transform: translateY(-20px) rotate(0deg) scale(1.1);
+  }
+  
+  .card:nth-child(7):hover {
+    z-index: 2;
+    transform: translateY(-20px) rotate(0deg) scale(1.1);
+  }
+  
